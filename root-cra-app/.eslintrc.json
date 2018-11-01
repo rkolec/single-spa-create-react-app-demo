@@ -1,0 +1,102 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "arrowFunctions": true,
+      "restParams": true,
+      "spread": true
+
+    },
+    "sourceType": "module",
+    "ecmaVersion": 9
+  },
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "strict": [
+      "error",
+      "safe"
+    ],
+    "no-debugger": "error",
+    "brace-style": [
+      2,
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "no-trailing-spaces": "error",
+    "keyword-spacing": "error",
+    "space-before-function-paren": [
+      2,
+      "never"
+    ],
+    "spaced-comment": [
+      "error",
+      "always"
+    ],
+    "vars-on-top": "error",
+    "no-undef": "warn",
+    "no-undefined": "warn",
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "warn",
+      "always"
+    ],
+    "curly": "error",
+    "guard-for-in": "error",
+    "no-eval": "error",
+    "no-with": "error",
+    "valid-typeof": "error",
+    "no-bitwise": "error",
+    "no-unused-vars": "error",
+    "no-continue": "warn",
+    "no-extra-semi": "warn",
+    "no-unreachable": "warn",
+    "no-unused-expressions": "warn",
+    "no-console": "off",
+    "max-len": [
+      "warn",
+      {
+        "code": 140,
+        "ignorePattern": "^import "
+      }
+    ],
+    "react/prefer-es6-class": "warn",
+
+    "react/forbid-prop-types": "off", // TODO
+
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/destructuring-assignment": "off", // TODO
+    "no-plusplus": "off",
+    "func-names": [
+      "warn",
+      "as-needed"
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/require-default-props": "off",
+    "import/no-unresolved": "warn"
+  }
+}
